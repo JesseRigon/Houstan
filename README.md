@@ -1,11 +1,12 @@
 # Houstan we have lift-off
 
-Houstan is the public repo for My Home Lab.
+Houstan is the public repo for My Home Lab. It is currently version 0.0.0.0.0.0.1 *USE AT OWN RISK*
 
 To keep things consistent I have decided on a couple guidelines/principles for this home lab:
 
 1. Cheap
    - I plan on sticking to big names in the open source world that have large enterprise clients. This is not because I don't like new projects, but that I am also cheap with my time and don't want to waste it on technologies that are not well documented, that don't have adoption and could disappear tomorrow. Except in certain cases where the solution is in a novel space to where it has no incumbent competitors.
+   - I will be hoarding old and new hardware from anywhichwhere so the goal is to create as much of a hardware agnostic setup as possible.
   
 2. Useful but Not Simple
    - The goal in this Home lab is to familiarize and become competent in various current and future technologies. I will try to keep the main branch stable, but I may/will make breaking changes to the architecture over time.
@@ -56,11 +57,16 @@ A basic scaffold will look something like:
 
 # Install
 
-Currently this home lab assumes you have sudo access but does not assume you are loggin in as root.
+Currently this home lab will assume you have sudo access but does not that you are logged in as root.
 
-Clone the Houstan repo to your users home directory on the computer you wish to use as the command center.
+Clone the Houstan repo to your users home directory, on the computer you wish to use as the command center.
 
-It will place all configs and output all logs outside the git folder into ~/HoustonConfigs as the default.
+Create a secondary directory
+
+Houstan will place all configs uutside the public repo into ~/HoustonConfigs as the default location.
+OPTIONAL = I recommend creating a new private git repo for saving personal config data into, as a backup.
+
+Houstan will place all generated logs into ~/HoustanLogs.
 
 
 
