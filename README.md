@@ -57,16 +57,16 @@ A basic scaffold will look something like:
 
 # Install
 
-Currently this home lab will assume you have sudo access but does not that you are logged in as root.
+*Currently this home lab will assume you have sudo access but does not that you are logged in as root.*
 
-Clone the Houstan repo to your users home directory, on the computer you wish to use as the command center.
+Houstan will place all generated logs into ~/HoustanLogs by default.
 
-Create a secondary directory
+Houstan uses Doppler.com for Secret and Configuration management. 
 
-Houstan will place all configs uutside the public repo into ~/HoustonConfigs as the default location.
-OPTIONAL = I recommend creating a new private git repo for saving personal config data into, as a backup.
-
-Houstan will place all generated logs into ~/HoustanLogs.
+1. Clone the Houstan repo to your users home directory, on the computer you wish to use as the command center.
+2. Run make in CommandCenter directory.
+   What this does:
+   1. Installs Doppler cli
 
 
 
