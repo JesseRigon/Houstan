@@ -57,7 +57,7 @@ A basic scaffold will look something like:
 
 # Install
 
-*Currently this home lab will assume you have sudo access but does not that you are logged in as root.*
+*Currently this home lab will assume you have sudo access but not that you are logged in as root.*
 
 Houstan will place all generated logs into ~/HoustanLogs by default.
 
@@ -67,6 +67,7 @@ Houstan uses Doppler.com for Secret and Configuration management.
 2. Run make in CommandCenter directory.
    What this does:
    1. Installs Doppler cli
+   2. 
 
 
 
