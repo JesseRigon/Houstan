@@ -31,12 +31,12 @@ services:
           memory: 512M
     restart: unless-stopped
 
-  db:
+  tinkerbelldb:
     image: postgres:14-alpine
     environment:
-      POSTGRES_DB: tinkerbell
-      POSTGRES_PASSWORD: tinkerbell
-      POSTGRES_USER: tinkerbell
+      POSTGRES_DB: $POSTGRES_DB
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+      POSTGRES_USER: $POSTGRES_USER
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -117,7 +117,7 @@ services:
     environment:
       FACILITY: $FACILITY
       PGDATABASE: tinkerbell
-      PGHOST: db
+      PGHOST: tinkerbelldb
       PGPASSWORD: tinkerbell
       PGPORT: 5432
       PGSSLMODE: disable
@@ -131,11 +131,11 @@ services:
       - 42113:42113/tcp
       - 42114:42114/tcp
     depends_on:
-      db:
+      tinkerbelldb:
         condition: service_healthy
       generate-tls-certs:
         condition: service_completed_successfully
-      db-migrations:
+      tinkerbelldb-migrations:
         condition: service_completed_successfully
     deploy:
       resources:
@@ -183,27 +183,27 @@ services:
       - ./create-tink-records/create.sh:/app/create.sh:ro
       - ./create-tink-records/manifests:/manifests:ro
     depends_on:
-      db:
+      tinkerbelldb:
         condition: service_healthy
       tink-server:
         condition: service_healthy
 
-  db-migrations:
+  tinkerbelldb-migrations:
     image: $TINK_SERVER_IMAGE
     environment:
       FACILITY: $FACILITY
       ONLY_MIGRATION: "true"
-      PGDATABASE: tinkerbell
-      PGHOST: db
-      PGPASSWORD: tinkerbell
+      PGDATABASE: $POSTGRES_DB
+      PGHOST: tinkerbelldb
+      PGPASSWORD: $POSTGRES_PASSWORD
       PGPORT: 5432
       PGSSLMODE: disable
-      PGUSER: tinkerbell
+      PGUSER: $POSTGRES_USER
       TINKERBELL_TLS: $TINKERBELL_TLS
     volumes:
       - certs:/certs/$FACILITY:ro
     depends_on:
-      db:
+      tinkerbelldb:
         condition: service_healthy
     restart: on-failure
 
@@ -259,7 +259,7 @@ services:
       TINKERBELL_GRPC_AUTHORITY: tink-server:42113
       TINKERBELL_TLS: $TINKERBELL_TLS
     depends_on:
-      db:
+      tinkerbelldb:
         condition: service_healthy
       tink-server:
         condition: service_healthy
