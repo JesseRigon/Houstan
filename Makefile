@@ -1,5 +1,5 @@
 Doppler:
-echo "Installing Doppler"
+	echo "Installing Doppler"
 	# Install pre-reqs
 	sudo apt-get update
 	sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
