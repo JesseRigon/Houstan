@@ -45,7 +45,7 @@ These may or may not run on the same machine, or might even run on 3rd party har
 
 ## Laboratory
 
-Laboratory is the portion of my home lab that is meant to mimic a commercial environmnt as possible. In terms of architecture, not proprietary software. 
+Laboratory is the portion of my home lab that is meant to mimic a commercial environment as much as possible.
 
 A basic scaffold will look something like:
 
