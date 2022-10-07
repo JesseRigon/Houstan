@@ -1,3 +1,7 @@
+DopplerSetup: Doppler
+	echo '${DOPPLER_PERSONAL_TOKEN}' | doppler configure set token --scope /workspace/Houstan
+	find -name doppler.yaml -execdir doppler setup --no-interactive  \;
+	
 Doppler:
 	echo "Installing Doppler"
 	# Install pre-reqs
@@ -10,6 +14,4 @@ Doppler:
 	sudo apt-get update && sudo apt-get install -y doppler
 
 
-DopplerSetup: Doppler
-	echo '${DOPPLER_PERSONAL_TOKEN}' | doppler configure set token --scope /workspace/Houstan
-	find -name doppler.yaml -execdir doppler setup --no-interactive  \;
+
