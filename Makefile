@@ -11,4 +11,5 @@ Doppler:
 
 
 DopplerSetup: Doppler
-	find -name doppler.yaml -printf "%h\n" -execdir doppler setup --no-interactive  \;
+	echo '${DOPPLER_PERSONAL_TOKEN}' | doppler configure set token --scope /workspace/Houstan
+	find -name doppler.yaml -execdir doppler setup --no-interactive  \;
