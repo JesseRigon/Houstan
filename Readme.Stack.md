@@ -1,6 +1,11 @@
 # Stack
 This file lists all tools and the docs related to the stack used in project Houstan.
 
+Prerequisites for Houstan are:
+   - linux
+   - docker and docker-compose
+   - git
+
 ## CommandCenter
 
 | Tech | Used For | Docs Link |

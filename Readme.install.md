@@ -31,13 +31,18 @@ export DOPPLER_PERSONAL_TOKEN="<your-token>"
    5. From Houstan/ run bash doppler.sh
       - Please see doppler.sh comments for what exactly is happening.
 
-You are now setup with doppler. To use doppler when initializing anything that will require doppler secrets injection you will need to use the 'doppler run -- (command) please refer to this docs page.
+You are now setup with doppler. To use doppler when initializing anything that will require doppler secrets injection you will need to use the 'doppler run -- ' syntax. Please refer to this [docs](https://docs.doppler.com/docs/accessing-secrets) page.
 
 ## Setup
 
 *Currently this home lab will assume you have sudo access but not that you are logged in as root.*
 
 Houstan and will place all generated logs into ~/HoustanLogs/ by default.
+
+Prerequisites for Houstan are:
+   - linux
+   - docker and docker-compose
+   - git
 
 1. Clone the Houstan repo to your users home directory, on the computer you wish to use as the command center.
 2. From CommandCenter/ run make

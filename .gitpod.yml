@@ -1,3 +1,9 @@
 ports:
   - port: 0001-8999
     onOpen: ignore
+
+additionalRepositories:
+  - url: https://github.com/JesseRigon/HoustanConfig.git
+    checkoutLocation: HoustanConfig
+
+workspaceLocation: Houstan/main.code-workspace # Relative to /workspace dir
