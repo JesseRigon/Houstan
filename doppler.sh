@@ -10,5 +10,5 @@ sudo apt-get update && sudo apt-get install -y doppler
 
 # Setup Doppler 
 export HISTIGNORE='doppler*'
-echo '${DOPPLER_PERSONAL_TOKEN}' | doppler configure set token --scope ./
+echo ${DOPPLER_PERSONAL_TOKEN} | doppler configure set token --scope ./
 find -name doppler.yaml -execdir doppler setup --no-interactive  \;
