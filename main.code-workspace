@@ -6,7 +6,7 @@
 			  "path": "." // Main repo that you will open in Gitpod (e.g. frontend)
 		  },
 		  {
-			  "path": "../HoustanConfig" // Additional repo
+			  "path": "../HoustanData" // Additional repo
 		  },
 		  {
 			  "path": "../HoustanLogs"
