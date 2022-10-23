@@ -2,9 +2,6 @@ ports:
   - port: 0001-8999
     onOpen: ignore
 
-tasks:
-  - command: export HOUSTAN_PARENT_DIR=/workspace
-
 additionalRepositories:
   - url: https://github.com/JesseRigon/HoustanData.git
     checkoutLocation: HoustanData
