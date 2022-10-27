@@ -1,21 +1,11 @@
 # Houstan we have lift-off
 
-Houstan is the public repo for My Home Lab. It is currently version 0.0.0.0.0.0.1 *USE AT OWN RISK*
-
-To keep things consistent I have decided on a couple guidelines/principles for this home lab:
-
-1. Cheap
-   - I plan on sticking to big names in the open source world that have large enterprise clients. This is not because I don't like new projects, but that I am also cheap with my time and don't want to waste it on technologies that are not well documented, that don't have adoption and could disappear tomorrow. Except in certain cases where the solution is in a novel space to where it has no incumbent competitors.
-   - I will be hoarding old and new hardware from anywhichwhere so the goal is to create as much of a hardware agnostic setup as possible.
-  
-2. Useful but Not Simple
-   - The goal in this Home lab is to familiarize and become competent in various current and future technologies. I will try to keep the main branch stable, but I may/will make breaking changes to the architecture over time.
-   - There are times when I might make decisions to deliberately make the stack a little confusing by using two different technologies for the same purpose in separate areas of the stack in order to acquire both skills.
-   - I will do my best to use only one software for one purpose and to find the best software for a particular job, but the previous statements hold priority.
+Houstan is the public repo for My Home Lab. It is currently version 0.01 *USE AT OWN RISK*
 
 # Three heads of the Hydra
 
-These next sections explain the overall structure of the repo. Keep in mind these are separated by functionality not by which machine they will run on.
+These next sections explain the overall structure of the repo. 
+*Keep in mind these are separated by functionality not by which machine they will run on.*
 
 ## Command Center
 
