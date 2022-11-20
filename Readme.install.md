@@ -2,12 +2,11 @@
 
 ## Gitpod
 
-I personally use [Gitpod](https://gitpod.io/) as my Integrated Online Development Environment or IODE. Like Github Codespaces but older, mature, and more available. Exactly how I like 'em.
+I personally use [Gitpod](https://gitpod.io/) which is a Cloud Development Environment (CDE).
 
-It is the quickest way to try out Houstan without touching your personal system, but there is no requirement to use Gitpod for Houstan to function. There are two files that are in the root directory that are excess if you don't use it that you may delete. 
+It is the quickest way to try out Houstan without touching your personal system, but there is no requirement to use Gitpod for Houstan to function.
 
-- .gitpod.yml
-- main.code-workspace
+If you go to [HoustanGP Repo](https://www.github.com/JesseRigon/HoustanGP) you can see the repo that houses all the files necessary to run Houstan on Gitpod are located. Further Instruction will be on the readme in the mentioned. You will need to create an account but there is a free tier for testing their service and for testng out Houstan preliminarily. 
 
 ## Doppler
 
