@@ -18,8 +18,12 @@ The basic scaffolding is as follows:
 
   - Single Command Center machine for mission critical, always on utilities and programs
   - Machine for network router (not the main internet router)
-  - A set of machines that create a master cluster.
-    - Optional child clusters for application orchestration
+  - A set of machines that create a master Nomad cluster.
+    - OpenStack
+     - Kubernetes Clusters
+      - cluster for home use applications
+      - cluster for testing 
+      - cluster(s) for business applications
 
 In my case, I have installed Ubuntu Desktop on a Microsoft Surface Go that I use as my command center as it sits on my living room table, always on. I use this as I also have Home Assistant running on this machine and I like the touch screen display for this use case. If you don't need that, even a RaspPi would work.
 
