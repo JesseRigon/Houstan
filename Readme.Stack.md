@@ -15,7 +15,9 @@ Prerequisites for installing and running Houstan are:
 | Gitpod| Online IDE | https://www.gitpod.io/docs/introduction |
 | Doppler | Secrets and Configs Manager | https://docs.doppler.com/docs/start |
 
-## CommandCenter
+## Infrastructure
+
+### Command-Center
 
 | Tech | Used For | Docs Link |
 | --- | --- | --- |

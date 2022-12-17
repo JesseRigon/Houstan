@@ -24,7 +24,7 @@ and also *delete* the file doppler.sh as you will not need it.
 
 ### If you are reading this far then you decided to use Doppler.  
 
-This section will teach you how to use it to get your homelab up and running. Please read all the steps first before attempting to implement.
+This section will teach you how to set it up and use it to get your homelab up and running. Please read all the steps first before attempting to implement.
 
    1. [Create an account on doppler.com](https://dashboard.doppler.com/register)
    2. Create a doppler workspace for your homelab
@@ -38,35 +38,7 @@ export HISTIGNORE='export DOPPLER_TOKEN*'
 export DOPPLER_PERSONAL_TOKEN="<your-token>"
 ```
 
-   5. From Houstan/ run bash doppler.sh
+   5. From Houstan dir run  `bash doppler.sh`
       - Please see doppler.sh comments for what exactly is happening.
 
 You are now setup with doppler. To use doppler when initializing anything that will require doppler secrets injection you will need to use the 'doppler run -- ' syntax. Please refer to this [docs](https://docs.doppler.com/docs/accessing-secrets) page.
-
-<a name="install"></a>
-## Install
-
-*Currently this home lab will assume you have sudo access but not that you are logged in as root.*
-
-Prerequisites for Houstan are:
-   - linux
-   - docker and docker-compose
-   - git
-
-On the computer you wish to use as the command center and in the dir you want Houstan installed:
-
-```
-git clone https://github.com/JesseRigon/Houstan.git
-cd Houstan/
-```
-
-Again If you opted not to use Gitpod or Doppler as discussed above then you may proceed to remove the excess files at this time.
-
-```
-make
-```
-
-relative to the Houstan/ directory:
-
-- Houstan mounts volumes for all containers into ../HoustanData/ by default.
-- Houstan and will place all generated logs into ../HoustanLogs/ by default.
