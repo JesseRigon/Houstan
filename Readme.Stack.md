@@ -16,7 +16,7 @@ Prerequisites for installing and running Houstan are:
 | Doppler | Secrets and Configs Manager | https://docs.doppler.com/docs/start |
 
 
-### Command-Center
+## Command-Center
 
   - Administration
     - Identity & Authentication
