@@ -1,0 +1,3 @@
+[submodule "CommandCenter/seaweedfs"]
+	path = CommandCenter/seaweedfs
+	url = https://github.com/seaweedfs/seaweedfs
